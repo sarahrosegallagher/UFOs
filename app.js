@@ -25,7 +25,7 @@ function buildTable(data){
     });
 }
 
-// start filter
+// start date filter
 
 //handle click
 function handleClick(){
