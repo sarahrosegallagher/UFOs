@@ -11,18 +11,18 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="../static/css/style.css">
 
 </head>
-<body>
+<body class="bg-dark">
     <div class = "wrapper">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
             <a class="navbar-brand" href="index.html">UFO Sightings</a>
         </nav>
     </div>
 
     <div class="jumbotron">
-        <h1>The Truth Is Out There</h1>
+        <h1 class="display-4">The Truth Is Out There</h1>
     </div>
 
     <div class = "container-fluid">
@@ -47,22 +47,42 @@
     <div class = "container-fluid">
         <div class = "row">
             <div class="col-md-3">
-                <form>
+                <form class = "bg-dark">
                     <p>Filter Search</p>
-                </form>
 
                 <!-- list for filter information -->
-                <ul class = "list-group">
-                    <!-- first list item: label and input box for user -->
-                    <li class = "list-group-item">
-                        <label for="date">Enter Date</label>
+                <ul class = "list-group bg-dark">
+                    <!-- first list item: date -->
+                    <li class = "list-group-item bg-dark">
+                        <label for="date">Enter a Date</label>
                         <input type="text" placeholder = "1/10/2010" id = "datetime"/>
                     </li>
-                    <!-- second list item: -->
-                    <li class = "list-group-item">
-                        <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                    <!-- second list item: city -->
+                    <li class = "list-group-item bg-dark">
+                        <label for="date">Enter a City</label>
+                        <input type="text" class="form-control" placeholder = "city" id = "city"/>
                     </li>
+                    <!-- third list item: state -->
+                    <li class = "list-group-item bg-dark">
+                        <label for="date">Enter a State</label>
+                        <input type="text" class="form-control" placeholder = "state" id = "state"/>
+                    </li>
+                    <!-- fourth list item: country -->
+                    <li class = "list-group-item bg-dark">
+                        <label for="date">Enter a Country</label>
+                        <input type="text" class="form-control" placeholder = "country" id = "country"/>
+                    </li>
+                    <!-- fifth list item: shape -->
+                    <li class = "list-group-item bg-dark">
+                        <label for="date">Enter a Shape</label>
+                        <input type="text" class="form-control" placeholder = "shape" id = "shape"/>
+                    </li>
+                    <!-- filter button -->
+                    <!-- <li class = "list-group-item bg-dark">
+                        <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                    </li> -->
                 </ul>
+                </form>
             </div>
             <div class="col-md-9">
                 <!-- construct table in same container, longer column -->
@@ -83,5 +103,15 @@
             </div>            
         </div>
     </div>
+<!-- scripts -->
+    <!-- d3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+
+    <!-- file path data.js -->
+    <script src="../static/js/data.js"></script>
+
+    <!-- file path app.js -->
+    <script src="../static/js/app.js"></script>
+    
 </body>
 </html>
